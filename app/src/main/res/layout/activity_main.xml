@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorRed"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/topdisplay"
+        android:id="@+id/title"
+        android:fontFamily="monospace"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layoutDescription="@xml/activity_main_xml_mainlayout_scene"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/light"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/bulb"
+            app:altSrc="@drawable/lightbulb"
+            app:crossfade="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/dropDown"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/light" />
+
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
