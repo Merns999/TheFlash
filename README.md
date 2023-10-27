@@ -19,8 +19,9 @@ This is a simple Android application that allows you to control the flashlight o
 To use this app, follow these steps:
 
 1. Clone this repository to your local machine.
-git clone https://github.com/Merns999/TheFlash.git
-
+   ```bash
+   git clone https://github.com/Merns999/TheFlash.git
+   
 2. Open the project in Android Studio.
 
 3. Build and run the app on your Android device.
